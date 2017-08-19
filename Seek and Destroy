@@ -7,7 +7,7 @@ function destroyer(arg) {
   for (var i = 1; i < arguments.length; i++) {
     tester.push(arguments[i]);
   }
-  console.log(array.filter(function(val) {
+  var answer =  array.filter(function(val) {
     for (var i = 0; i < tester.length; i++) {
       if (val == tester[i]){
         return false;
@@ -15,9 +15,8 @@ function destroyer(arg) {
       
     }
     return true;
-    })
-  );
-  
+    });
+return answer;
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
