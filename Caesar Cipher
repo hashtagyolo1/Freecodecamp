@@ -1,7 +1,11 @@
+// need to take numbers from str[i], put them into an array, then convert back into letters
+
 
 function rot13(str) { // LBH QVQ VG!
-  
-  return str;
+  for (var i = 0; i < str.length ; i++){
+    var answer = str[i].charCodeAt + 13;
+  }
+ return answer.fromCharCode();
 }
 
 // Change the inputs below to test
