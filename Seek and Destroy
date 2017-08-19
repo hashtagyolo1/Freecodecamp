@@ -1,0 +1,22 @@
+
+function destroyer(arg) {
+  var array = arg.slice();
+  console.log(array);
+  var tester = [];
+  for (i = 1 ; i < arguments.length ; i++){
+    tester.push(arguments[i]);
+  }
+  console.log(tester);
+  var answer = array.filter();
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+
+/*
+returns in console
+
+[1, 2, 3, 1, 2, 3]
+[2, 3]
+
+*/
