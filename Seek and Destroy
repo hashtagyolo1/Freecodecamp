@@ -1,3 +1,28 @@
+//final
+
+
+function destroyer(arg) {
+  var array = arg.slice(); //shows primary array
+  var tester = []; // after for loop contains arguments to test
+  for (var i = 1; i < arguments.length; i++) {
+    tester.push(arguments[i]);
+  }
+  console.log(array.filter(function(val) {
+    for (var i = 0; i < tester.length; i++) {
+      if (val == tester[i]){
+        return false;
+      }
+      
+    }
+    return true;
+    })
+  );
+  
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+
 //after some tips
 
 function destroyer(arg) {
