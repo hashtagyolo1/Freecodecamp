@@ -20,3 +20,19 @@ returns in console
 [2, 3]
 
 */
+
+
+//after some tips
+
+function destroyer(arg) {
+  var array = arg.slice(); //shows primary array
+  var tester = []; // after for loop contains arguments to test
+  for (var i = 1 ; i < arguments.length ; i++){
+    tester.push(arguments[i]);
+  }
+  array.filter(function(val){
+    console.log(val == tester[1]);
+  });
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
