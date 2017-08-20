@@ -1,3 +1,23 @@
+//fucked it now. need to work out the maths for it, but not it's totally broken
+
+var answer = [];
+function rot13(str) { // LBH QVQ VG!
+  for (var i = 0; i < str.length ; i++){
+    if (str[i].charCodeAt() === 32){
+      answer.push(str[i].charCodeAt());  
+    }
+    if (str[i].charCodeAt() > 54 && str[i].charCodeAt() < 63){
+    answer.push(str[i].charCodeAt() - 13);
+    }
+  }
+ console.log(String.fromCharCode(str[i]));
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
+
+
+
 //almost there
 
 var answer = [];
