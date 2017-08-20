@@ -1,3 +1,22 @@
+//for some reason it won't work
+
+var answer = [];
+function rot13(str) { // LBH QVQ VG!
+  for (var i = 0; i < str.length ; i++){
+    if (str[i].charCodeAt() < 65 || str[i].charCodeAt() > 90){
+      answer.push(String.fromCharCode((str[i].charCodeAt())));  
+    } else if (str[i].charCodeAt() > 77 && str[i].charCodeAt() <92){
+    answer.push(String.fromCharCode((str[i].charCodeAt() - 13)));
+  } else if (str[i].charCodeAt() < 78 && str[i].charCodeAt() > 65){
+             answer.push(String.fromCharCode((str[i].charCodeAt() + 13)));
+             }
+        
+}     var almostThere = answer.toString();
+return almostThere.replace(/,/g, '');
+}
+// Change the inputs below to test
+rot13("GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.");
+
 //unfucked it. All I need to do now is join it together
 
 var answer = [];
