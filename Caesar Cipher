@@ -19,16 +19,15 @@ rot13("SERR PBQR PNZC");
 
 
 //almost there
-
 var answer = [];
 function rot13(str) { // LBH QVQ VG!
   for (var i = 0; i < str.length ; i++){
     if (str[i].charCodeAt() === 32){
-      answer.push(str[i].charCodeAt());  
+      answer.push(String.fromCharCode((str[i].charCodeAt())));  
     } 
-    answer.push(str[i].charCodeAt() + 13);
+    answer.push(String.fromCharCode((str[i].charCodeAt() + 13)));
   }
- return answer.fromCharCode();
+ return String.fromCharCode();
 }
 
 // Change the inputs below to test
