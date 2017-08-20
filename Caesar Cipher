@@ -1,3 +1,20 @@
+//almost there
+
+var answer = [];
+function rot13(str) { // LBH QVQ VG!
+  for (var i = 0; i < str.length ; i++){
+    if (str[i].charCodeAt() === 32){
+      answer.push(str[i].charCodeAt());  
+    } 
+    answer.push(str[i].charCodeAt() + 13);
+  }
+ return answer.fromCharCode();
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
+
+
 // need to take numbers from str[i], put them into an array, then convert back into letters
 
 
