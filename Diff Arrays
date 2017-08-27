@@ -1,0 +1,18 @@
+
+//This seems to do nothing at all
+
+function diffArray(arr1, arr2) {
+  var newArr = arr1.filter(function(check){
+    for (var i = 0 ; i < arr1.length ; i++){
+      for (var j = 0 ; j < arr2.length ; j++){
+        return arr1[i].length != arr2[j].length;
+      }
+    }
+  });
+ 
+  
+  
+  return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
