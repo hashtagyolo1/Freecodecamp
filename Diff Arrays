@@ -1,4 +1,4 @@
-//slight change 
+//slight change, still only returns whatever is in the arr that is filtered.
 
 function diffArray(arr1, arr2) {
   var newArr = arr1.filter(function(check) {
